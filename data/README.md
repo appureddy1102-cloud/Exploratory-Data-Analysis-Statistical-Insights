@@ -1,0 +1,5 @@
+# Dataset acquisition and provenance
+
+The notebook obtains the source CSV at run time from https://raw.githubusercontent.com/leonism/sample-superstore/master/data/superstore.csv (the classic Tableau Sample Superstore teaching dataset). The mirror's license/redistribution rights are not clearly established, so no source or cleaned copy is committed to this repository. The notebook downloads it into this folder as `cleaned_dataset.csv`, validates and prepares it, then saves the prepared local copy. Please verify permissions with the upstream rights holder before redistributing the data. It is fictional/sample retail data and does not contain confidential business records.
+
+Key fields include order and ship dates, customer identifier/name and segment, region/state/city, product/category/sub-category, sales (USD), quantity, discount (fraction), and profit (USD). Rows are order lines. Missing/invalid fields are handled as documented in the notebook; negative profit is retained as a valid loss.
